@@ -1,0 +1,85 @@
+/* All html objects will be wrapped in the #wrap div */
+.goal-container {
+  width: 25%;
+  height: 200px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  padding: 10px 25px 0;
+  font-family: fantasy;
+  font-weight: bolder;
+  font-size: 25px;
+  color: white;
+  background: transparent;
+  -webkit-text-stroke: 1.5px black;
+}
+
+#goal-title {
+  z-index: 10;
+}
+
+#goal-bar {
+  border-radius: 9999px;
+  background-color: #EEABEE;
+  border: #FFFFFF 3px solid;
+  height: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#goal-bar span {
+  opacity: .7;
+  margin: 0 10px;
+  z-index: 10;
+}
+
+#goal-progress {
+  position: absolute;
+  background-color: #663399;
+  transition: width 2s;
+  border-radius: 9999px;
+  height: 30px;
+}
+
+#goal-progress.animated {
+  animation: widen 2s ease;
+}
+
+@keyframes widen {
+  50% {
+    width: 25%;
+  }
+}
+
+#goal-progress svg {
+  position: relative;
+  float: right;
+  left: 25px;
+  top: -30%;
+  height: 50px;
+  width: 50px;
+}
+
+#goal-progress svg.animated {
+  animation: wiggle .2s 10, grow 2s ease;
+}
+
+@keyframes wiggle {
+  25% {
+    transform: rotate(-15deg);
+  }
+
+  75% {
+    transform: rotate(15deg);
+  }
+}
+
+@keyframes grow {
+  50% {
+    transform: scale(3);
+    filter: blur(2px);
+  }
+}
+
