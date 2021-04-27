@@ -12,6 +12,7 @@
   color: #FFFFFF;
   background: transparent;
   -webkit-text-stroke: 1.5px #000000;
+  font-family: 'Baumans', cursive;
 }
 
 #goal-title {
