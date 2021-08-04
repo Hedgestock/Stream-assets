@@ -1,0 +1,27 @@
+{
+  "goal": {
+    "type": "number",
+    "label": "Follower goal",
+    "value": 50
+  },
+  "title":{
+    "type": "text",
+    "label": "Goat title",
+    "value": "Follower goal"
+  },
+  "textColor": {
+    "type": "colorpicker",
+    "label": "Text color",
+    "value": "#FFFFFF"
+  },
+  "progressColor": {
+    "type": "colorpicker",
+    "label": "Progress color",
+    "value": "#663399"
+  },
+  "progressBackground": {
+    "type": "colorpicker",
+    "label": "Progress Background",
+    "value": "#EEABEE"
+  }
+}

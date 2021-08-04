@@ -1,0 +1,12 @@
+{
+  "goal": {
+    "type": "number",
+    "label": "Follower goal",
+    "value": 50
+  },
+  "title":{
+    "type": "text",
+    "label": "Stream title",
+    "value": "Titre du stream"
+  }
+}
