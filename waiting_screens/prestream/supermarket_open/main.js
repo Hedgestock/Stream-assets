@@ -35,7 +35,7 @@ window.addEventListener("onWidgetLoad", function (obj) {
   document.getElementById("ad").innerText = "{title}";
 
   document.getElementById("last-follow").innerText =
-    obj.detail.recents.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt)) [0]["name"];
+    obj.detail.recents.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt))[0]["name"];
 });
 
 window.addEventListener("onEventReceived", function (obj) {
