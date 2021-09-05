@@ -1,13 +1,13 @@
 {
   "goal": {
     "type": "number",
-    "label": "Follower goal",
-    "value": 50
+    "label": "Sub goal",
+    "value": 15
   },
   "title":{
     "type": "text",
     "label": "Goal title",
-    "value": "Follower goal"
+    "value": "Sub goal"
   },
   "textColor": {
     "type": "colorpicker",

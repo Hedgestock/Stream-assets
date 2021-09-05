@@ -1,0 +1,12 @@
+{
+  "time": {
+    "type": "number",
+    "label": "Time",
+    "value": 1200000
+  },
+  "title":{
+    "type": "text",
+    "label": "Title",
+    "value": "Prochaine session :"
+  }
+}
