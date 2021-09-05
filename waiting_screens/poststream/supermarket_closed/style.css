@@ -217,6 +217,7 @@ body {
   color: red;
   font-weight: bolder;
 }
+#poster-goal img,
 #poster-goal svg {
   width: 70%;
   height: 70%;

@@ -1,12 +1,21 @@
 {
   "goal": {
     "type": "number",
-    "label": "Follower goal",
-    "value": 50
+    "label": "Goal to reach",
+    "value": 15
   },
-  "title":{
+  "goalTitle": {
     "type": "text",
-    "label": "Stream title",
-    "value": "Titre du stream"
+    "label": "Goal title",
+    "value": "Goal"
+  },
+  "goalType": {
+    "type": "dropdown",
+    "label": "Goal type",
+    "value": "sub",
+    "options":{
+      "sub": "Subscibers",
+      "follow": "Followers"
+    }
   }
 }

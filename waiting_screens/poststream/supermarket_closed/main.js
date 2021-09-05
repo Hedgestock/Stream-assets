@@ -2,8 +2,15 @@ let current = 1;
 
 window.addEventListener("onWidgetLoad", function (obj) {
   document.getElementById("goal-total").innerText = "{goal}";
+  document.getElementById("goal-title").innerText = "{goalTitle}";
 
-  current = obj.detail.session.data["follower-total"].count;
+  if ("{goalType}" == "follow") {
+    current = obj.detail.session.data["follower-total"].count;
+  }
+  if ("{goalType}" == "sub") {
+    current = obj.detail.session.data["subscriber-points"].amount;
+  }
+
   document.getElementById("goal-current").innerText = current;
 
   document.getElementById("last-follow").innerText =
@@ -12,15 +19,22 @@ window.addEventListener("onWidgetLoad", function (obj) {
 
 window.addEventListener("onEventReceived", function (obj) {
   if (!obj.detail.event) return;
-  if (obj.detail.listener != "follower-latest") return;
 
   const event = obj.detail.event;
+
+  if (obj.detail.listener === "follower-latest") {
+    console.log("EVENT", event)
+    document.getElementById("last-follow").innerText = event["name"];
+  }
+
+  if ("{goalType}" == "follow" && obj.detail.listener != "follower-latest") return;
+  if ("{goalType}" == "sub" && obj.detail.listener != "subscriber-latest") return;
+
   current += 1;
   document.getElementById("goal-current").innerText = current;
 
-  document.getElementById("last-follow").innerText = event["name"];
-
-  const emphasis = document.getElementById("emphasis");
-  emphasis.classList.remove("animated");
-  setTimeout(() => emphasis.classList.add("animated"), 50);
+  // const emphasis = document.getElementById("emphasis");
+  // emphasis.classList.remove("animated");
+  // setTimeout(() => emphasis.classList.add("animated"), 50);
 });
+
