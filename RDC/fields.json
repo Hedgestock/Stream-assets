@@ -1,0 +1,27 @@
+{
+  "player1score": {
+    "type": "number",
+    "label": "Score Player 1",
+    "value": 0
+  },
+  "player2score": {
+    "type": "number",
+    "label": "Score Player 2",
+    "value": 0
+  },
+  "round": {
+    "type": "text",
+    "label": "Round",
+    "value": "Round 1"
+  },
+  "player1name":{
+    "type": "text",
+    "label": "Name Player 1",
+    "value": "Joueur 1"
+  },
+  "player2name":{
+    "type": "text",
+    "label": "Name Player 2",
+    "value": "Joueur 2"
+  }
+}

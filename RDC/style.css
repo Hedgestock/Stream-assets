@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  font-family: "Baumans", cursive;
+  overflow: hidden;
+  font-weight: bolder;
+  font-size: 25px;
+  color: #ffffff;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+#logo {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  border-radius: 0 0 10px 10px;
+}
+
+#logo > img {
+  height: 160px;
+}
+
+.player-bar {
+  height: fit-content;
+}
+
+.player-bar * {
+  margin: 0 20px;
+}
+
+#left-bar {
+  border-bottom-left-radius: 100px;
+  border-right: none;
+}
+
+#right-bar {
+  border-bottom-right-radius: 100px;
+  border-left: none;
+}
+
+.background {
+  border: solid 6px #666666;
+  border-top: none;
+  background-color: #333333;
+}
