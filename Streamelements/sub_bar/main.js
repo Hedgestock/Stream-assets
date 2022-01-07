@@ -8,14 +8,16 @@ window.addEventListener("onWidgetLoad", function (obj) {
   goal = obj.detail.fieldData["goal"];
   document.getElementById("goal-total").innerText = "goal: {goal}";
 
-  setCurrent(obj.detail.session.data["subscriber-points"].amount);});
+  setCurrent(obj.detail.session.data["subscriber-points"].amount);
+});
 
 window.addEventListener("onEventReceived", function (obj) {
   if (!obj.detail.event) return;
   if (obj.detail.listener != "subscriber-latest") return;
 
   const event = obj.detail.event;
-  setCurrent(current + 1);
+  if (obj.detail.event.tier == "prime") setCurrent(current + 1);
+  else setCurrent(current + (obj.detail.event.tier / 1000));
 
   const progress = document.getElementById("goal-progress");
   const img = progress.getElementsByTagName("img")[0];

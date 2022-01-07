@@ -9,7 +9,7 @@
   font-family: fantasy;
   font-weight: bolder;
   font-size: 25px;
-  color: #FFFFFF;
+  color: #333333;
   background: transparent;
   font-family: 'Baumans', cursive;
 }
@@ -20,8 +20,8 @@
 
 #goal-bar {
   border-radius: 9999px;
-  background-color: #EEABEE;
-  border: #FFFFFF 3px solid;
+  background-color: #AC8923;
+  border: #333333 3px solid;
   height: 30px;
   width: 100%;
   display: flex;
@@ -37,7 +37,7 @@
 
 #goal-progress {
   position: absolute;
-  background-color: #663399;
+  background-color: #F1C232;
   transition: width 2s;
   border-radius: 9999px;
   height: 30px;

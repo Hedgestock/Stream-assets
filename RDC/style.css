@@ -3,8 +3,8 @@ body {
   font-family: "Baumans", cursive;
   overflow: hidden;
   font-weight: bolder;
-  font-size: 25px;
-  color: #ffffff;
+  font-size: 40px;
+  color: #333333;
 }
 
 .container {
@@ -16,11 +16,9 @@ body {
   display: flex;
   flex-flow: column;
   align-items: center;
-  border-radius: 0 0 10px 10px;
-}
-
-#logo > img {
-  height: 160px;
+  border-radius: 0 0 20px 20px;
+  padding: 0 10px;
+  font-size: 50px;
 }
 
 .player-bar {
@@ -35,17 +33,19 @@ body {
 #left-bar {
   border-bottom-left-radius: 100px;
   border-right: none;
-  margin-right: -6px;
+  margin-right: -7px;
+  padding-left: 10px;
 }
 
 #right-bar {
   border-bottom-right-radius: 100px;
   border-left: none;
-  margin-left: -6px;
+  margin-left: -7px;
+  padding-right: 10px;
 }
 
 .background {
-  border: solid 6px #666666;
+  border: solid 6px #AC8923;
   border-top: none;
-  background-color: #333333;
+  background-color: #F1C232;
 }

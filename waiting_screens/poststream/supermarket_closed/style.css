@@ -53,15 +53,11 @@ body {
 .door.left {
   right: 50vw;
 }
-.door.left.animated {
-  right: 63vw;
-}
+
 .door.right {
   left: 50vw;
 }
-.door.right.animated {
-  left: 63vw;
-}
+
 
 .schedule {
   text-align: center;
